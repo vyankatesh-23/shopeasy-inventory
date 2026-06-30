@@ -11,7 +11,13 @@ pipeline {
 				checkout scm
 				}
 			}
-
+		stage('Run test') {
+			steps {
+				sh 'pip install -r requirements.txt'
+				sh 'pytest'
+				}
+			}
+				
 		stage('Build Image') {
 			steps {
 				sh 'docker build -t $IMAGE_NAME:latest .'
