@@ -5,5 +5,5 @@ def check_stock(item, quantity):
         return f"{item} is OUT OF STOCK"
 
 if __name__ == "__main__":
-    print(check_stock("Laptop", 6))
+    print(check_stock("Laptop", 5))
     print(check_stock("Mouse", 0))
