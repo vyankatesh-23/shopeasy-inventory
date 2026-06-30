@@ -3,6 +3,7 @@ pipeline {
 	environment {
 	DOCKERHUB_CREDENTIAL = credentials('dockerhub-creds')
 	IMAGE_NAME = 'vyankatesh23/shopeasy-image'
+	}
 
 	stages {
 		stage('Checkout code') {
