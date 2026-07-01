@@ -1,6 +1,6 @@
 def check_stock(item, quantity):
     if quantity > 0:
-        return f"{item} is in stock "
+        return f"{item} is in stock ({quantity} units)"
     else:
         return f"{item} is OUT OF STOCK"
 
